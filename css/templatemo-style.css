@@ -75,10 +75,6 @@ https://templatemo.com/tm-521-get-ready
     outline: none;
   }
 
-  ::-webkit-scrollbar{
-    width: 8px;
-    height: 8px;
-  }
 
   ::-webkit-scrollbar-thumb {
     cursor: pointer;
