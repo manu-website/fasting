@@ -92,6 +92,7 @@
 				{
 				i = i+ 1;
 				dt1 +=i;
+				timer = dt1;
 				}
 
 				if(dt < tstart)
