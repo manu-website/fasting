@@ -71,6 +71,7 @@
 			var timer;
 			var dt1 = 'start';
 			var dt2 = 'end';
+			var dt3 = 'start';
 			dt1 +=i;
 			dt2 +=i;
 			var tinit = new Date(settings['start1']);
@@ -90,9 +91,9 @@
 
 				if(dt > tend )
 				{
-				i = i+ 1;
-				dt1 +=i;
-				timer = dt1;
+				i = i + 1;
+				dt3 +=i;
+				timer = dt3;
 				}
 
 				if(dt < tstart)
