@@ -114,51 +114,53 @@ https://templatemo.com/tm-521-get-ready
                                  <h1><script>
 
                                     var settings = { 
-                                        'end1': "2 mar 2022 18:54:00",
-                                        'end2': "3 mar 2022 18:55:00",
-                                        'end3': "4 mar 2022 18:56:00",
-                                        'end4': "5 mar 2022 18:57:00",
-                                        'end5': "6 mar 2022 18:58:00",
-                                        'end6': "7 mar 2022 18:59:00",
-                                        'end7': "8 mar 2022 19:01:00",
-                                        'end8': "9 mar 2022 19:02:00",
-                                        'end9': "10 mar 2022 19:03:00",
-                                        'end10': "11 mar 2022 19:04:00",
-                                        'end11': "12 mar 2022 19:05:00",
-                                        'end12': "13 mar 2022 19:06:00",
-                                        'end13': "14 mar 2022 19:07:00",
-                                        'end14': "15 mar 2022 19:08:00",
-                                        'end15': "16 mar 2022 19:09:00",
-                                        'end16': "17 mar 2022 19:10:00",
-                                        'end17': "18 mar 2022 19:11:00",
-                                        'end18': "19 mar 2022 19:12:00",
-                                        'end19': "20 mar 2022 19:13:00",
-                                        'start1': "2 mar 2022 07:34:00",
-                                        'start2': "3 mar 2022 07:32:00",
-                                        'start3': "4 mar 2022 07:31:00",
-                                        'start4': "5 mar 2022 07:29:00",
-                                        'start5': "6 mar 2022 07:28:00",
-                                        'start6': "7 mar 2022 07:26:00",
-                                        'start7': "8 mar 2022 07:25:00",
-                                        'start8': "9 mar 2022 07:23:00",
-                                        'start9': "10 mar 2022 07:21:00",
-                                        'start10': "11 mar 2022 07:20:00",
-                                        'start11': "12 mar 2022 07:18:00",
-                                        'start12': "13 mar 2022 07:17:00",
-                                        'start13': "14 mar 2022 07:15:00",
-                                        'start14': "15 mar 2022 07:13:00",
-                                        'start15': "16 mar 2022 07:12:00",
-                                        'start16': "17 mar 2022 07:10:00",
-                                        'start17': "18 mar 2022 07:09:00",
-                                        'start18': "19 mar 2022 07:07:00",
-                                        'start19': "20 mar 2022 07:05:00"
+                                      'end1': "1 mar 2024 18:53:00",
+                                      'end2': "2 mar 2024 18:54:00",
+                                      'end3': "3 mar 2024 18:56:00",
+                                      'end4': "4 mar 2024 18:57:00",
+                                      'end5': "5 mar 2024 18:58:00",
+                                      'end6': "6 mar 2024 18:59:00",
+                                      'end7': "7 mar 2024 19:00:00",
+                                      'end8': "8 mar 2024 19:01:00",
+                                      'end9': "9 mar 2024 19:02:00",
+                                      'end10': "10 mar 2024 19:03:00",
+                                      'end11': "11 mar 2024 19:04:00",
+                                      'end12': "12 mar 2024 19:05:00",
+                                      'end13': "13 mar 2024 19:06:00",
+                                      'end14': "14 mar 2024 19:07:00",
+                                      'end15': "15 mar 2024 19:09:00",
+                                      'end16': "16 mar 2024 19:10:00",
+                                      'end17': "17 mar 2024 19:11:00",
+                                      'end18': "18 mar 2024 19:12:00",
+                                      'end19': "19 mar 2024 19:13:00",
+                                      'start1': "1 mar 2024 07:35:00",
+                                      'start2': "2 mar 2024 07:33:00",
+                                      'start3': "3 mar 2024 07:32:00",
+                                      'start4': "4 mar 2024 07:30:00",
+                                      'start5': "5 mar 2024 07:28:00",
+                                      'start6': "6 mar 2024 07:27:00",
+                                      'start7': "7 mar 2024 07:25:00",
+                                      'start8': "8 mar 2024 07:24:00",
+                                      'start9': "9 mar 2024 07:22:00",
+                                      'start10': "10 mar 2024 07:21:00",
+                                      'start11': "11 mar 2024 07:19:00",
+                                      'start12': "12 mar 2024 07:17:00",
+                                      'start13': "13 mar 2024 07:16:00",
+                                      'start14': "14 mar 2024 07:14:00",
+                                      'start15': "15 mar 2024 07:13:00",
+                                      'start16': "16 mar 2024 07:11:00",
+                                      'start17': "17 mar 2024 07:09:00",
+                                      'start18': "18 mar 2024 07:08:00",
+                                      'start19': "19 mar 2024 07:06:00"
                                    };
                                         var print = "";
                                         var tnow = new Date();
+                                        var tmonth = tnow.getMonth();
                                         var ti = tnow.getDate();
-                                        ti = ti-1;
                                         var i;
-                                        if(ti > 19 || ti < 1 )
+                                        //ti = ti-1
+                                        //if(ti > 19 || ti < 1 )
+                                        if(ti > 19)
                                         {
                                             i = 1;
                                         }
@@ -171,15 +173,22 @@ https://templatemo.com/tm-521-get-ready
                                         startval +=i;
                                         endval +=i;
                                         var tinit = new Date(settings['start1']);
+                                        var afterend = new Date(settings['end19']);
                                         var tstart = new Date(settings[startval]);
                                         var tend = new Date(settings[endval]);
-                                        if (tnow<tinit)
+
+                                        if (tnow < tinit || tnow > afterend)
                                         {
                                              print = "Fasting Starts In :";
                                         }
-                                        if(tstart< tnow && tend> tnow)
+
+                                        if(tstart < tnow && tend > tnow)
                                         {
                                              print = "Fasting Ends In :";
+                                        }
+                                        else if(tend < tnow)
+                                        {
+                                              print = "Fasting has Ends, Time to Eat :";
                                         }
                                         else
                                         {
@@ -191,22 +200,24 @@ https://templatemo.com/tm-521-get-ready
                               <!-- You can change the date time in init.js file -->
                               <ul class="countdown">
                                    <li>
-                                        <span class="days">14</span>
+                                        <span class="days">00</span>
                                         <h3>Days</h3>
                                    </li>
                                    <li>
-                                        <span class="hours">10</span>
+                                        <span class="hours">00</span>
                                         <h3>hours</h3>
                                    </li>
                                    <li>
-                                        <span class="minutes">15</span>
+                                        <span class="minutes">00</span>
                                         <h3>minutes</h3>
                                    </li>
                                    <li>
-                                        <span class="seconds">34</span>
+                                        <span class="seconds">00</span>
                                         <h3>seconds</h3>
                                    </li>     
                               </ul>
+
+                              <canvas id="fireworksCanvas"></canvas>
 
                               <h1>
                                    <table class="styled-table">
@@ -216,99 +227,98 @@ https://templatemo.com/tm-521-get-ready
                                           <th>Sunset</th>
                                         </tr>
                                         <tr>
-                                             <td>2 March 2022</td>
-                                             <td>07:34:00</td>
+                                             <td>1 March 2024</td>
+                                             <td>07:35:00</td>
+                                             <td>18:53:00</td>
+                                           </tr>
+                                           <tr>
+                                             <td>2 March 2024</td>
+                                             <td>07:33:00</td>
                                              <td>18:54:00</td>
                                            </tr>
                                            <tr>
-                                             <td>3 March 2022</td>
+                                             <td>3 March 2024</td>
                                              <td>07:32:00</td>
-                                             <td>18:55:00</td>
-                                           </tr>
-                                           <tr>
-                                             <td>4 March 2022</td>
-                                             <td>07:31:00</td>
                                              <td>18:56:00</td>
                                            </tr>
                                            <tr>
-                                             <td>5 March 2022</td>
-                                             <td>07:29:00</td>
+                                             <td>4 March 2024</td>
+                                             <td>07:30:00</td>
                                              <td>18:57:00</td>
                                            </tr>
                                            <tr>
-                                             <td>6 March 2022</td>
+                                             <td>5 March 2024</td>
                                              <td>07:28:00</td>
                                              <td>18:58:00</td>
                                            </tr>
                                            <tr>
-                                             <td>7 March 2022</td>
-                                             <td>07:26:00</td>
+                                             <td>6 March 2024</td>
+                                             <td>07:27:00</td>
                                              <td>18:59:00</td>
                                            </tr>
                                            <tr>
-                                             <td>8 March 2022</td>
+                                             <td>7 March 2024</td>
                                              <td>07:25:00</td>
+                                             <td>19:00:00</td>
+                                           </tr>
+                                           <tr>
+                                             <td>8 March 2024</td>
+                                             <td>07:24:00</td>
                                              <td>19:01:00</td>
                                            </tr>
                                            <tr>
-                                             <td>9 March 2022</td>
-                                             <td>07:23:00</td>
+                                             <td>9 March 2024</td>
+                                             <td>07:22:00</td>
                                              <td>19:02:00</td>
                                            </tr>
                                            <tr>
-                                             <td>10 March 2022</td>
+                                             <td>10 March 2024</td>
                                              <td>07:21:00</td>
                                              <td>19:03:00</td>
                                            </tr>
                                            <tr>
-                                             <td>11 March 2022</td>
-                                             <td>07:20:00</td>
+                                             <td>11 March 2024</td>
+                                             <td>07:19:00</td>
                                              <td>19:04:00</td>
                                            </tr>
                                            <tr>
-                                             <td>12 March 2022</td>
-                                             <td>07:18:00</td>
+                                             <td>12 March 2024</td>
+                                             <td>07:17:00</td>
                                              <td>19:05:00</td>
                                            </tr>
- 
                                            <tr>
-                                             <td>13 March 2022</td>
-                                             <td>07:17:00</td>
+                                             <td>13 March 2024</td>
+                                             <td>07:16:00</td>
                                              <td>19:06:00</td>
                                            </tr>
                                            <tr>
-                                             <td>14 March 2022</td>
-                                             <td>07:15:00</td>
+                                             <td>14 March 2024</td>
+                                             <td>07:14:00</td>
                                              <td>19:07:00</td>
                                            </tr>
                                            <tr>
-                                             <td>15 March 2022</td>
+                                             <td>15 March 2024</td>
                                              <td>07:13:00</td>
-                                             <td>19:08:00</td>
-                                           </tr>
-                                           <tr>
-                                             <td>16 March 2022</td>
-                                             <td>07:12:00</td>
                                              <td>19:09:00</td>
                                            </tr>
                                            <tr>
-                                             <td>17 March 2022</td>
-                                             <td>07:10:00</td>
+                                             <td>16 March 2024</td>
+                                             <td>07:11:00</td>
                                              <td>19:10:00</td>
                                            </tr>
                                            <tr>
-                                             <td>18 March 2022</td>
+                                             <td>17 March 2024</td>
                                              <td>07:09:00</td>
                                              <td>19:11:00</td>
                                            </tr>
                                            <tr>
-                                             <td>19 March 2022</td>
-                                             <td>07:07:00</td>
+                                             <td>18 March 2024</td>
+                                             <td>07:08:00</td>
                                              <td>19:12:00</td>
                                            </tr>
                                            <tr>
-                                             <td>20 March 2022</td>
-                                             <td>07:05:00</td>
+                                             <td>19 March 2024</td>
+                                             <td>07:06:00</td>
                                              <td>19:13:00</td>
                                            </tr>
                                       </table></h1>
@@ -326,6 +336,7 @@ https://templatemo.com/tm-521-get-ready
      <script src="js/countdown.js"></script>
      <script src="js/init.js"></script>
      <script src="js/custom.js"></script>
+     <script src="js/firework.js"></script>
 
 </body>
 </html>

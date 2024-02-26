@@ -20,6 +20,15 @@ https://templatemo.com/tm-521-get-ready
     overflow-x: hidden;
   }
 
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999; /* Set a higher z-index to make it appear on top */
+    display: block;
+    overflow: hidden;
+  }
+
 
 
   /*---------------------------------------
