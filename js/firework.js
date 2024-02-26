@@ -34,7 +34,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // Add more dates and times as needed
   ];
 
-  const fireworksDuration = 300000; // 5 minutes in milliseconds
+    //const fireworksDuration = 300000; // 5 minutes in milliseconds
+    const fireworksDurationInMinutes = 120;
+    const fireworksDuration = fireworksDurationInMinutes * 60000;
 
     function createFirework() {
       const firework = {
